@@ -11,28 +11,34 @@
             text-align: center;
         }
         h1 {
-            font-size: 32px;
+            font-size: 36px;
             font-weight: bold;
             color: black;
         }
         p {
-            font-size: 24px;
+            font-size: 28px;
+            margin: 15px 0;
         }
         a {
-            font-size: 20px;
+            font-size: 22px;
             color: blue;
             text-decoration: underline;
+        }
+        .result-section {
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <h1>Calculation Results</h1>
-    <p><strong>Creatinine Clearance (CrCl):</strong> {{ crcl }} mL/min</p>
-    <p><strong>Estimated Glomerular Filtration Rate (eGFR):</strong> {{ egfr }} mL/min/1.73m²</p>
-    <p><strong>Recommended Apixaban Dose:</strong> {{ apixaban_dose }}</p>
-    <p><strong>Recommended Rivaroxaban Dose:</strong> {{ rivaroxaban_dose }}</p>
-    <p><strong>Recommended Edoxaban Dose:</strong> {{ edoxaban_dose }}</p>
-    <p><strong>Recommended Dabigatran Dose:</strong> {{ dabigatran_dose }}</p>
+    <div class="result-section">
+        <p><strong>Creatinine Clearance (CrCl):</strong> {{ crcl }} mL/min</p>
+        <p><strong>Estimated Glomerular Filtration Rate (eGFR):</strong> {{ egfr }} mL/min/1.73m²</p>
+        <p><strong>Recommended Apixaban Dose:</strong> {{ apixaban_dose }}</p>
+        <p><strong>Recommended Rivaroxaban Dose:</strong> {{ rivaroxaban_dose }}</p>
+        <p><strong>Recommended Edoxaban Dose:</strong> {{ edoxaban_dose }}</p>
+        <p><strong>Recommended Dabigatran Dose:</strong> {{ dabigatran_dose }}</p>
+    </div>
     <br>
     <a href="/">Go Back</a>
 </body>
