@@ -1,12 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Results</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            color: black;
+        }
+        p {
+            font-size: 24px;
+        }
+        a {
+            font-size: 20px;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Results</h1>
-    <p>Estimated Creatinine Clearance (CrCl): {{ crcl }} mL/min</p>
-    <p>Recommended Apixaban Dose: {{ apixaban_dose }}</p>
+    <h1>Calculation Results</h1>
+    <p><strong>Creatinine Clearance (CrCl):</strong> {{ crcl }} mL/min</p>
+    <p><strong>Estimated Glomerular Filtration Rate (eGFR):</strong> {{ egfr }} mL/min/1.73m²</p>
+    <p><strong>Recommended Apixaban Dose:</strong> {{ apixaban_dose }}</p>
+    <p><strong>Recommended Rivaroxaban Dose:</strong> {{ rivaroxaban_dose }}</p>
+    <p><strong>Recommended Edoxaban Dose:</strong> {{ edoxaban_dose }}</p>
+    <p><strong>Recommended Dabigatran Dose:</strong> {{ dabigatran_dose }}</p>
+    <br>
     <a href="/">Go Back</a>
 </body>
 </html>
