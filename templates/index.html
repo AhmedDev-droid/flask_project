@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creatinine Clearance Calculator</title>
+</head>
+<body>
+    <h1>Creatinine Clearance Calculator</h1>
+    <form method="POST">
+        <label>Age (years):</label>
+        <input type="number" name="age" required><br>
+
+        <label>Weight (kg):</label>
+        <input type="number" step="0.1" name="weight" required><br>
+
+        <label>Serum Creatinine:</label>
+        <input type="number" step="0.1" name="serum_creatinine" required><br>
+
+        <label>Unit:</label>
+        <select name="unit">
+            <option value="micromol/L">micromol/L</option>
+            <option value="mg/dL">mg/dL</option>
+        </select><br>
+
+        <label>Gender:</label>
+        <select name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br><br>
+
+        <button type="submit">Calculate</button>
+    </form>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
